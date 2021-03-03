@@ -81,14 +81,12 @@ function probarEjercicio(){
 			}
 
 			//f - promedio de hab entre paises ingresados
-
-			for ( i = 0; i < cantidadPaises; i++ ) 
+			if ( cantidadPaises[i] > 0 )
 			{
-				if ( cantidadPaises[i] > 0 )
-				{
 					suma = numerodeHabitantes++;
-				}
-			operacionPromedio = suma / cantidadPaises
+			}
+			operacionPromedio = suma / cantidadPaises;
 			alert("El promedio de habitantes es: " +operacionPromedio )
-			} 
-}
+
+
+} 
